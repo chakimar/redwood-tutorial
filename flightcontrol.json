@@ -6,7 +6,12 @@
       "name": "Development",
       "region": "us-east-1",
       "source": {
-        "branch": "main"
+        "pr": true,
+        "filter": {
+          "labels": [
+            "deploy-preview"
+          ]
+        }
       },
       "services": [
         {
